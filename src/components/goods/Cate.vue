@@ -11,7 +11,7 @@
     <el-card>
       <el-row>
         <el-col>
-          <el-button type="primary" @click="ShowAddCateDialog"
+          <el-button type="primary" @click="showAddCateDialog"
             >添加分类</el-button
           >
         </el-col>
@@ -111,7 +111,6 @@
       title="编辑"
       :visible.sync="editDialogVisible"
       width="50%"
-      @close="editRoleInfo"
     >
     <el-form ref="editFormRef" :model="editCateForm" label-width="70px">
         <el-form-item label="角色名称" prop="cat_name">
